@@ -8,19 +8,16 @@
 
 		<id name="soumisLe" column="soumisLe" type="date" />
 
-		<many-to-one name="auteur" class="model.Chercheur" fetch="join"
+		<many-to-one name="auteur" column="auteur" class="model.Chercheur" fetch="join"
 			update="false" insert="false">
-			<column name="matricule" />
 		</many-to-one>
 
-		<many-to-one name="coauteur" class="model.Chercheur"
+		<many-to-one name="coauteur" column="coauteur" class="model.Chercheur"
 			fetch="join" update="false" insert="false">
-			<column name="matricule" />
 		</many-to-one>
 
-		<many-to-one name="departement" class="model.Departement"
+		<many-to-one name="departement" column="departement" class="model.Departement"
 			fetch="join">
-			<column name="nom" />
 		</many-to-one>
 
 	</class>

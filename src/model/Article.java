@@ -34,4 +34,9 @@ public class Article {
 	}
 	
 	
+	public String toString() {
+		return "" + this.auteur + "|" + this.soumisLe + "|" + this.departement;
+	
+	}
+	
 }

@@ -10,9 +10,7 @@
 		<property name="position" column = "position" type="string"/>
 		<property name="salaire" column = "salaire" type="integer"/>
 		
-		<many-to-one name = "equipe" class = "model.Equipe" fetch = "join" update="false" insert="false">
-			<column name = "nom" />
-		</many-to-one>
+		<many-to-one name = "equipe" column="equipe" class = "model.Equipe" fetch = "join" />
 		
 	</class>
 </hibernate-mapping>

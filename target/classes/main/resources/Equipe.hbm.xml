@@ -11,8 +11,7 @@
 		<property name="nbrProjets" column = "nbrProjets" type="integer"/>
 		
 		
-		<many-to-one name = "departement" class = "model.Departement" fetch = "join" update="false" insert="false">
-			<column name = "nom" />
+		<many-to-one name = "departement" column="departement" class = "model.Departement" fetch = "join" >
 		</many-to-one>
 		
 	</class>
