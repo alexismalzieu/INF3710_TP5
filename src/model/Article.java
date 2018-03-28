@@ -8,7 +8,6 @@ public class Article {
 	Chercheur coauteur;
 	Date soumisLe;
 	Departement departement;
-	
 	public Chercheur getAuteur() {
 		return auteur;
 	}
@@ -33,7 +32,6 @@ public class Article {
 	public void setDepartement(Departement departement) {
 		this.departement = departement;
 	}
-	
 	
 	
 }

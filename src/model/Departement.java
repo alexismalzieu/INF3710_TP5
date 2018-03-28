@@ -7,18 +7,16 @@ public class Departement {
 	Date dateCreation;
 	String adresse;
 	String telephone;
-	
-	
 	public String getNom() {
 		return nom;
 	}
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	public Date getDatecreation() {
+	public Date getDateCreation() {
 		return dateCreation;
 	}
-	public void setDatecreation(Date dateCreation) {
+	public void setDateCreation(Date dateCreation) {
 		this.dateCreation = dateCreation;
 	}
 	public String getAdresse() {
@@ -33,5 +31,10 @@ public class Departement {
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
 	}
+	
+	public String toString() {
+		return this.nom;
+	}
+	
 	
 }

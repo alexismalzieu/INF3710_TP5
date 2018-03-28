@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE hibernate-mapping PUBLIC
 "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping >
-	<class name="Model.Article" table="Article">
-		<composite-id > 
-			<key-many-to-one name="auteur" column="auteur" class = "Model.Chercheur">
-				<column name = "matricule"/> 
-			</key-many-to-one>
-			<key-property name="soumisLe" column="soumisLe" type="date"/> 
-			<key-many-to-one name="departement" column="departement" class = "Model.Departement">
-				<column name = "nom"/> 
-			</key-many-to-one> 
-		</composite-id> 
-				
-		<many-to-one name = "coauteur" class = "Model.Chercheur" fetch = "join" >
-			<column name = "matricule" />
+<hibernate-mapping>
+	<class name="model.Article" table="Article">
+
+
+		<id name="soumisLe" column="soumisLe" type="date" />
+
+		<many-to-one name="auteur" class="model.Chercheur" fetch="join"
+			update="false" insert="false">
+			<column name="matricule" />
+		</many-to-one>
+
+		<many-to-one name="coauteur" class="model.Chercheur"
+			fetch="join" update="false" insert="false">
+			<column name="matricule" />
+		</many-to-one>
+
+		<many-to-one name="departement" class="model.Departement"
+			fetch="join">
+			<column name="nom" />
 		</many-to-one>
 
 	</class>

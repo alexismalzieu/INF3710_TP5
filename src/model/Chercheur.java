@@ -8,7 +8,6 @@ public class Chercheur {
 	String position;
 	Equipe equipe;
 	int salaire;
-	
 	public String getMatricule() {
 		return matricule;
 	}
@@ -45,6 +44,8 @@ public class Chercheur {
 	public void setSalaire(int salaire) {
 		this.salaire = salaire;
 	}
+	
+	
 	
 	
 	

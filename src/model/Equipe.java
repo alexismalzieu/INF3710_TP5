@@ -9,17 +9,16 @@ public class Equipe {
 	Departement departement;
 	String responsable;
 	int nbrProjets;
-	
 	public String getNom() {
 		return nom;
 	}
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	public Date getDatecreation() {
+	public Date getDateCreation() {
 		return dateCreation;
 	}
-	public void setDatecreation(Date dateCreation) {
+	public void setDateCreation(Date dateCreation) {
 		this.dateCreation = dateCreation;
 	}
 	public Departement getDepartement() {
@@ -40,6 +39,8 @@ public class Equipe {
 	public void setNbrProjets(int nbrProjets) {
 		this.nbrProjets = nbrProjets;
 	}
+	
+	
 	
 	
 }
